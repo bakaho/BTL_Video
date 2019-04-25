@@ -17,7 +17,7 @@ public class darkCurtainControl : MonoBehaviour {
 
     public void moveToNext(){
         if(nextGoodOrBad == 0){
-            SceneManager.LoadScene(sceneName: "PureBad");
+            SceneManager.LoadScene(sceneName: "PreScene");
         }else{
             SceneManager.LoadScene(sceneName: "PureGood");
         }

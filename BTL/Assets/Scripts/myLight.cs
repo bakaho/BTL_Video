@@ -55,7 +55,7 @@ public class myLight : MonoBehaviour {
 
         //initialization of camera
         CameraTransform = GameObject.FindWithTag("MainCamera").transform;
-        cameraOffset = CameraTransform.transform.position - new Vector3(0f, 0f, 0f);
+        cameraOffset = CameraTransform.transform.position - new Vector3(0f, 0f, -50f);
 	}
 	
 	// Update is called once per frame
