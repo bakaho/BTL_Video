@@ -14,8 +14,9 @@ public class GameManager : MonoBehaviour {
     
     //current level
     //static public int currentPuzzle = -1;
-    static public int curModule = 0;
-    static public int curSentence = 0;
+    //!!!!!!!!!
+    static public int curModule = 1;
+    static public int curSentence = 1;
     //current shape
     static public int curShapeM = 0;
     static public int curShapeS = 0;
@@ -63,6 +64,8 @@ public class GameManager : MonoBehaviour {
 	void Update () {
 
         if(firstTouch && (Input.touchCount >= 2 || Input.GetKeyDown(KeyCode.Return))){
+            print("M+ " + curModule);
+            print("s+ " + curSentence);
             firstTouch = false;
             myLight.inControl = false;
             //1. show button
@@ -127,7 +130,9 @@ public class GameManager : MonoBehaviour {
             curAngley = MainCamObj.transform.rotation.eulerAngles.y;
         }
         print(Mathf.Abs((float)(player.transform.position.x - charX)) <= ChrDeltaX);
+        print(charX);
         print(Mathf.Abs((float)(player.transform.position.z - charZ)) <= ChrDeltaZ);
+        print(player.transform.position.z);
         print(Mathf.Abs((float)(MainCamObj.transform.rotation.eulerAngles.x - CamAngleX)) <= CamDeltaX);
         print(Mathf.Abs((float)(curAngley - CamAngleY)) <= CamDeltaY);
         //print(Mathf.Abs((float)(MainCamObj.transform.rotation.eulerAngles.y - CamAngleY)));
@@ -159,9 +164,17 @@ public class GameManager : MonoBehaviour {
         if(m == 1){
             if (s == 1)
             {
-                bounds[0] = 17f;
-                bounds[1] = 74f;
-                bounds[2] = 27f;
+                //bounds[0] = 17f;
+                //bounds[1] = 74f;
+                //bounds[2] = 27f;
+                //bounds[3] = 0f;
+                //bounds[4] = 1.5f;
+                //bounds[5] = 3f;
+                //bounds[6] = 3f;
+                //bounds[7] = 3f;
+                bounds[0] = -13.6f;
+                bounds[1] = -25f;
+                bounds[2] = 28f;
                 bounds[3] = 0f;
                 bounds[4] = 1.5f;
                 bounds[5] = 3f;
