@@ -172,9 +172,19 @@ public class GameManager : MonoBehaviour {
                 //bounds[5] = 3f;
                 //bounds[6] = 3f;
                 //bounds[7] = 3f;
-                bounds[0] = -13.6f;
-                bounds[1] = -25f;
-                bounds[2] = 28f;
+                //gy
+                //bounds[0] = -13.6f;
+                //bounds[1] = -25f;
+                //bounds[2] = 28f;
+                //bounds[3] = 0f;
+                //bounds[4] = 1.5f;
+                //bounds[5] = 3f;
+                //bounds[6] = 3f;
+                //bounds[7] = 3f;
+                //hat
+                bounds[0] = 60.5f;
+                bounds[1] = -2.7f;
+                bounds[2] = 29f;
                 bounds[3] = 0f;
                 bounds[4] = 1.5f;
                 bounds[5] = 3f;
